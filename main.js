@@ -46,3 +46,13 @@ bottoneGenera.addEventListener('click', function() {
   document.getElementById('cambia-posto').innerHTML = codiceCp;
   document.getElementById('costo-biglietto').innerHTML = costoBiglietto;
 });
+
+// annulla Biglietto
+bottoneAnnulla.addEventListener('click', function() {
+  biglietto.className = 'hidden';
+
+  // reset
+  document.getElementById('nome').value = '';
+  document.getElementById('km').value = '';
+  document.getElementById('age').value = '';
+});
