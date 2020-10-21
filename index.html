@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class='title'>Calcola il prezzo del tuo biglietto</h1>
+
+      <section class='input'>
+        <div class="row">
+          <div class="input-col">
+            <label for="nome">Nome e Cognome</label>
+            <input type="text" name="nome" id='nome' placeholder="Inserisci il tuo nome">
+          </div>
+          <div class="input-col">
+            <label for="km">Km da percorrere</label>
+            <input type="number" name="km" id='km' placeholder="Inserisci quanti km devi percorrere">
+          </div>
+          <div class="input-col">
+            <label for='age'>Fascia di età</label>
+            <select id="age" name="age">
+              <option value="Minorenne">Minorenne</option>
+              <option value="Maggiorenne">Maggiorenne</option>
+              <option value="Over65">Over65</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button id='btnGenera' class="btn">Genera</button>
+          <button id='btnAnnulla' class="btn">Annulla</button>
+        </div>
+      </section>
+
+      <!-- Ticket -->
+      <section id='biglietto' >
+        <h2 class='title'>Il tuo biglietto</h2>
+        <div class="info-input">
+          <h3>
+            Nome passeggero
+            <span class="nome-input"></span>
+          </h3>
+
+          <div>
+            <h3>Offerta</h3>
+            <span class='offerta'></span>
+          </div>
+
+          <div>
+            <h3>Carrozza</h3>
+            <span class='carrozza'></span>
+          </div>
+
+          <div>
+            <h3>Codice CB</h3>
+            <span class='cambia-oosto'></span>
+          </div>
+
+          <div>
+            <h3>Costo biglietto</h3>
+            <span class='costo-biglietto'></span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
