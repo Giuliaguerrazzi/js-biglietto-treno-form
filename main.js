@@ -16,9 +16,33 @@ bottoneGenera.addEventListener('click', function() {
 
   var fasciaEta = document.getElementById('age').value;
   console.log(fasciaEta);
+
+  // costo biglietto
+  var prezzoKm = 0.21;
+
+  var costoBiglietto = prezzoKm * kmDaPercorre;
+
+  var offerta = 'Biglietto standard';
+
+  // offerte
+  if (fasciaEta == 'minorenne') {
+    costoBiglietto -= costoBiglietto * 0.2;
+    offerta = 'Sconto 20% Minorenne';
+  }
+  else if (fasciaEta == 'over65') {
+    costoBiglietto -= costoBiglietto * 0.4;
+    offerta = 'Sconto 40% Over65';
+  }
+
+  costoBiglietto  = costoBiglietto.toFixed(2) + '€';
+
+  var numCarrozza = Math.floor( Math.random() * 10) + 1;
+
+  var codiceCp = Math.floor( Math.random() * (10000 - 9000) ) + 9000;
+
+  document.getElementById('nome-input').innerHTML = nome;
+  document.getElementById('offerta').innerHTML = offerta;
+  document.getElementById('carrozza').innerHTML = numCarrozza;
+  document.getElementById('cambia-posto').innerHTML = codiceCp;
+  document.getElementById('costo-biglietto').innerHTML = costoBiglietto;
 });
-
-// costo biglietto
-var prezzoKm = 0.21;
-
-var costoBiglietto = prezzoKm * kmDaPercorre;
