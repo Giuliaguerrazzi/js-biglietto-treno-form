@@ -1,3 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utilities */
 .hidden {
   opacity: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  width: 1170px;
+  height: 100vh;
+  margin: auto;
+  background-image: url('metro.jpg');
+  background-size: auto;
+}
+
+h1 {
+  margin: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.input {
+  margin: auto;
+  width: 70%;
+  border: 2px solid #f0f0f0;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+}
+
+input, select {
+  display: block;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.btn {
+  margin-top: 35px;
+  margin-right: 5px;
+}
+
+h2 {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.info-input {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  border: 2px solid #f0f0f0;
+  background-color: #fff;
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.box, .box-name {
+  padding: 15px;
+}
+
+.box {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.box-name {
+  background-color: lightgrey;
+}
+
+.info-input span {
+  display: flex;
+  align-items: flex-end;
 }

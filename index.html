@@ -2,8 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Style -->
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <title>Il tuo Biglietto</title>
   </head>
   <body>
     <div class="container">
@@ -36,30 +39,32 @@
       </section>
 
       <!-- Ticket -->
-      <section id='biglietto' >
+      <section class='ticket'>
         <h2 class='title'>Il tuo biglietto</h2>
-        <div class="info-input">
-          <h3>
-            Nome passeggero
-            <span id="nome-input"></span>
-          </h3>
+        <div id='biglietto' class="info-input">
+          <div class="box-name">
+            <h3>
+              Nome passeggero
+              <span id="nome-input"></span>
+            </h3>
+          </div>
 
-          <div>
+          <div class="box">
             <h3>Offerta</h3>
             <span id='offerta'></span>
           </div>
 
-          <div>
+          <div class="box">
             <h3>Carrozza</h3>
             <span id='carrozza'></span>
           </div>
 
-          <div>
+          <div class="box">
             <h3>Codice CB</h3>
             <span id='cambia-posto'></span>
           </div>
 
-          <div>
+          <div class="box">
             <h3>Costo biglietto</h3>
             <span id='costo-biglietto'></span>
           </div>

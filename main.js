@@ -55,4 +55,10 @@ bottoneAnnulla.addEventListener('click', function() {
   document.getElementById('nome').value = '';
   document.getElementById('km').value = '';
   document.getElementById('age').value = '';
+
+  document.getElementById('nome-input').innerHTML = '';
+  document.getElementById('offerta').innerHTML = '';
+  document.getElementById('carrozza').innerHTML = '';
+  document.getElementById('cambia-posto').innerHTML = '';
+  document.getElementById('costo-biglietto').innerHTML = '';
 });
